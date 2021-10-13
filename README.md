@@ -11,61 +11,95 @@
 <!-- Entities discussed throughout the essay are typically defined before the essay text and
      are thus available in all text.  Entity identifiers (QIDs) can be found in either
      Wikipedia or Wikidata (https://www.wikidata.org)> -->
-<param ve-entity eid="Q185372"> <!-- Girl with a Pearl Earring painting -->
-<param ve-entity eid="Q41264"> <!-- Johannes Vermeer -->
-<param ve-entity eid="Q221092"> <!-- Mauritshuis -->
+<param ve-entity eid="Q642635"> <!-- Areopagitica -->
+<param ve-entity eid="Q72759598"> <!-- David Shribman -->
+<param ve-entity eid="Q64026160"> <!-- St. Paul's Churchyard -->
 <param ve-entity eid="Q36600"> <!-- The Hague -->
 
-
 Print & Probability
-is an interdisciplinary project at the intersection of book history, computer vision, and machine learning that seeks to discover letterpress printers whose identities have eluded scholars for several hundred years.
-
-<param ve-graphic
-       url="https://www.cmu.edu/dietrich/news/news-stories/2019/november/images/milton-mystery-figure-sketch3-2000x1000-min.jpg">
-
-
-
-
-
-
-
-
-
+is an interdisciplinary, NSF-funded project at the intersection of book history, computer vision, and machine learning that seeks to discover letterpress printers whose identities have eluded scholars for several hundred years.
 
 ## What We Do
 
-Our team of book historians, statistians, computer scientists, and librarians studoes tiny details like <span data-mouseover-image-zoomto="313,1566,142,115">damaged type</span> to identify clandestine early modern printers.
-
+Our team of book historians, statistians, computer scientists, and librarians studies tiny details like <span data-mouseover-image-zoomto="313,1566,142,115">damaged type</span> to identify clandestine early modern printers.
 <param ve-image
        label="Areopagitica"
        description="1644 pamphlet by John Milton"
        license="public domain"
        url="https://hrc.contentdm.oclc.org/digital/iiif/p15878coll17/10666/full/full/0/default.jpg">
 
+## In the News
+
+David M. Shribman: The lessons of 'Areopagitica'
+<param ve-iframe src="https://www.post-gazette.com/opinion/david-shribman/2019/11/24/Carnegie-Mellon-University-John-Milton-Areopagitica-document-analysis-Christopher-Warren/stories/201911240029">
+
+
+[NPL Highlights] Automated Analysis Of Historical Printed Documents, With Taylor Berg-Kirkpatrick
+<param ve-iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/719460085&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+
+## Our Team
+
+Taylor Berg-Kirkpatrick (PI)
+Max G'Sell (co-PI)
+Christopher Warren (co-PI)
+Kartik Goyal
+Nikolai Vogler
+Craig Stamm
+
+
+
+
+
+## Publications
+
+Warren, Christopher, Pierce Williams, Shruti Rijhwani, and Max G’Sell. “Damaged Type and Areopagitica’s Clandestine Printers.” Milton Studies 62, no. 1 (Spring 2020). [https://www.jstor.org/stable/10.5325/miltonstudies.62.1.0001](https://www.jstor.org/stable/10.5325/miltonstudies.62.1.0001).
+<param ve-iframe src="https://doi.org/10.1353/mlt.2020.0005">
+
+Goyal, Kartik, Chris Dyer, Christopher Warren, Max G’Sell, and Taylor Berg-Kirkpatrick. “A Probabilistic Generative Model for Typographical Analysis of Early Modern Printing.” ArXiv:2005.01646 [Cs], May 4, 2020. [http://arxiv.org/abs/2005.01646](http://arxiv.org/abs/2005.01646).
+<param ve-iframe src="https://arxiv.org/pdf/2005.01646.pdf">
+
+
+Warren, Christopher N., Avery Wiscomb, Pierce Williams, Samuel V. Lemley, and Max G’Sell. “Canst Thou Draw Out Leviathan with Computational Bibliography? New Angles on Printing Thomas Hobbes’ ‘Ornaments’ Edition.” Eighteenth-Century Studies 54, no. 4 (2021): 827–59. [https://doi.org/10.1353/ecs.2021.0094](https://doi.org/10.1353/ecs.2021.0094).
+<param ve-iframe src="https://doi.org/10.1353/ecs.2021.0094">
+
+
+
+
+
+
+
+## Another section
+
+such as _Areopagitica_.
+here's some stuff abouyt some stuff
+
+<param ve-compare curtain
+       url="https://www.cmu.edu/dietrich/news/news-stories/2019/november/images/milton-mystery-figure-sketch3-2000x1000-min.jpg">
+<param ve-compare curtain
+url="https://hrc.contentdm.oclc.org/digital/iiif/p15878coll17/10666/185,160,1048,454/full/0/default.jpg">
+
+
 <param ve-graphic
        url="https://www.cmu.edu/dietrich/news/news-stories/2019/november/images/milton-mystery-figure-sketch3-2000x1000-min.jpg">
 
-https://hrc.contentdm.oclc.org/digital/iiif/p15878coll17/10666/185,160,1048,454/full/0/default.jpg
 
-## Test
 
 <param ve-image
        url="https://hrc.contentdm.oclc.org/digital/iiif/p15878coll17/10666/full/full/0/default.jpg">
 
+
 ## Map
 
-The work has been in the collection of the Mauritshuis in The Hague since 1902 and has been the subject of various literary treatments. In 2006, the Dutch public selected it as the most beautiful painting in the Netherlands.
-<param ve-map center="Q36600" zoom="11" prefer-geojson>
+Some stuff about London printing and St. Paul's Churchyard
+<param ve-map center="Q105038089" zoom="11" prefer-geojson>
 
-## Multiple viewers
+### Project Alumni
 
-Multiple viewers may be defined for a single paragraph of text.  The first viewer defined is displayed as the default viewer.  Others are selectable using icons displayed in the top right margin of the paragraph.
-<param ve-image
-       manifest="https://iiif.juncture-digital.org/manifest/6dd738aed85597cac540ad31dd5818e86ef7f2918c7b43a9eb3123d5538e6e4c">
-<param ve-map center="Q36600" zoom="11">
+Shruti Rijhwani
+Dan Evans
+Avery Wiscomb
+Pierce Williams
 
 # References
 
 [^1]: [Wikipedia: Girl with a Pearl Earring](https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring)
-
-Site made with [Juncture](https://juncture-digital.org).
