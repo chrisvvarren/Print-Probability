@@ -42,12 +42,7 @@ David M. Shribman: The lessons of 'Areopagitica'
 
 ## Our Team
 
-Taylor Berg-Kirkpatrick (PI)
-Max G'Sell (co-PI)
-Christopher Warren (co-PI)
-Kartik Goyal
-Nikolai Vogler
-Craig Stamm
+Taylor Berg-Kirkpatrick, Max G'Sell, Christopher Warren, Kartik Goyal, Nikolai Vogler, Sam Lemley, Craig Stamm
 
 
 
