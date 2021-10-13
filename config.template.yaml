@@ -14,7 +14,7 @@ banner: https://picsum.photos/id/857/1000/400
 # Defines options shown in the header navigation menu
 ######################################################
 nav:
-- label: Contact the Juncture team
+- label: Contact the P&P team
   icon: fas fa-envelope
   action: contact-us
 - label: View page source
@@ -25,5 +25,5 @@ nav:
 # The following information is used in the display and processing of the contact form.
 contactForm:
   to:
-  - JSTOR Labs <labs@ithaka.org>
-  subject: Juncture
+  - Christopher Warren <cnwarren@cmu.edu>
+  subject: Print&Probability
