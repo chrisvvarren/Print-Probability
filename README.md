@@ -27,7 +27,7 @@ is an interdisciplinary, NSF-funded project at the intersection of book history,
 
 ## What We Do
 
-Our team of book historians, statistians, computer scientists, and librarians tackles bibliographical mysteries by modeling the material conditions of early modern print shops, including <span data-mouseover-image-zoomto="372,330,373,337">fonts and type pieces</span>, <span data-mouseover-image-zoomto="630,452,373,337">paper</span>, <span data-mouseover-image-zoomto="704,417,259,234">inking</span>.
+Our team of book historians, statistians, computer scientists, and librarians tackles bibliographical mysteries by modeling the material conditions of early modern print shops, including<span data-mouseover-image-zoomto="372,330,373,337">fonts and type pieces</span>, <span data-mouseover-image-zoomto="630,452,373,337">paper</span>, <span data-mouseover-image-zoomto="704,417,259,234">inking</span>, and <span data-mouseover-image-zoomto="572,370,224,202">imposition</span>
 <param ve-image
 url="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/AtelierTypographie-AVonWerdt.jpg/1280px-AtelierTypographie-AVonWerdt.jpg">
 
