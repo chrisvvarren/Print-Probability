@@ -18,15 +18,18 @@
 
 Print & Probability
 is an interdisciplinary, NSF-funded project at the intersection of book history, computer vision, and machine learning that seeks to discover letterpress printers whose identities have eluded scholars for several hundred years.
+<param ve-image
+       label="John Milton's 1644 pamphlet Areopagitica"
+       description="1644 pamphlet by John Milton"
+       license="public domain"
+       url="https://hrc.contentdm.oclc.org/digital/iiif/p15878coll17/10666/179,186,1092,519/full/0/default.jpg">
+
 
 ## What We Do
 
-Our team of book historians, statistians, computer scientists, and librarians studies tiny details like <span data-mouseover-image-zoomto="313,1566,142,115">damaged type</span> to identify clandestine early modern printers.
+Our team of book historians, statistians, computer scientists, and librarians tackles bibliographical mysteries by modeling the material conditions of early modern print shops, including <span data-mouseover-image-zoomto="372,330,373,337">fonts and type pieces</span>, <span data-mouseover-image-zoomto="630,452,373,337">paper</span>, <span data-mouseover-image-zoomto="704,417,259,234">inking</span>.
 <param ve-image
-       label="Areopagitica"
-       description="1644 pamphlet by John Milton"
-       license="public domain"
-       url="https://hrc.contentdm.oclc.org/digital/iiif/p15878coll17/10666/full/full/0/default.jpg">
+url="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/AtelierTypographie-AVonWerdt.jpg/1280px-AtelierTypographie-AVonWerdt.jpg">
 
 ## In the News
 
