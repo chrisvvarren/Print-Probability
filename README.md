@@ -68,6 +68,7 @@ Warren, Christopher N., Avery Wiscomb, Pierce Williams, Samuel V. Lemley, and Ma
 ## In the News
 
 David M. Shribman: _The lessons of_ Areopagitica
+
 **[Freedom, They Printed: AI on XSEDE-allocated system solves mystery of who printed seminal works on liberty](https://www.xsede.org/-/freedom-they-printed)**
 <param ve-iframe src="https://www.post-gazette.com/opinion/david-shribman/2019/11/24/Carnegie-Mellon-University-John-Milton-Areopagitica-document-analysis-Christopher-Warren/stories/201911240029">
 
