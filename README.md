@@ -2,8 +2,10 @@
 
 <param ve-config
        title="Print & Probability"
-       banner="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/AtelierTypographie-AVonWerdt.jpg/1280px-AtelierTypographie-AVonWerdt.jpg"
+       banner="https://github.com/chrisvvarren/Print-Probability/blob/main/images/anon_xxxxx_yyyyyy_00height_areopagitica_color.png?raw=true"
        layout="vertical">
+       <!-- banner="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/AtelierTypographie-AVonWerdt.jpg/1280px-AtelierTypographie-AVonWerdt.jpg"
+       layout="vertical"> -->
 
 <!-- banner="https://hrc.contentdm.oclc.org/digital/iiif/p15878coll17/10666/185,160,1048,454/full/0/default.jpg"
               layout="vertical"> -->
