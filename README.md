@@ -19,7 +19,7 @@
 
 Print & Probability
 is an interdisciplinary, NSF-funded project at the intersection of book history, computer vision, and machine learning that seeks to discover letterpress printers whose identities have eluded scholars for several hundred years.
-<param ve-image url="https://github.com/chrisvvarren/Print-Probability/blob/main/images/191115D_Pittsburgh_Theological_Research_RD-19.jpg?raw=true">
+<param ve-image region="1171,890,727,311" url="https://github.com/chrisvvarren/Print-Probability/blob/main/images/191115D_Pittsburgh_Theological_Research_RD-19.jpg?raw=true">
 
 
 ## What We Do
@@ -38,7 +38,7 @@ url="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/AtelierTypographi
 ## Our Team
 
 Print & Probability is a collaboration among researchers from Carnegie Mellon University and the University of California, San Diego.  The team's led by [Taylor Berg-Kirkpatrick](https://cseweb.ucsd.edu/~tberg/) (UCSD Computer Science), [Max G'Sell](http://www.stat.cmu.edu/people/faculty/mgsell) (CMU Statistics and Machine Learning), and [Christopher Warren](https://www.cmu.edu/dietrich/history/people/courtesy/warren.html) (CMU English and History) and also includes [Matthew Lincoln](https://matthewlincoln.net/) (CMU Libraries), [Kartik Goyal](https://www.ttic.edu/faculty/goyal/) (TTIC), [Nikolai Vogler](https://nvog.github.io/) (UCSD CS), [Sam Lemley](https://www.library.cmu.edu/about/people/samuel-lemley) (CMU Libraries), and [Craig Stamm](https://www.cmu.edu/dietrich/english/about-us/phds/bios/craig-stamm.html) (CMU English).
-<param ve-image url="https://github.com/chrisvvarren/Print-Probability/blob/main/images/191115D_Pittsburgh_Theological_Research_RD-6.jpg?raw=true">  
+<param ve-image region = "523,187,1653,1381" url="https://github.com/chrisvvarren/Print-Probability/blob/main/images/191115D_Pittsburgh_Theological_Research_RD-6.jpg?raw=true">  
 
 ## Publications
 
