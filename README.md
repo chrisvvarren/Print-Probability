@@ -16,11 +16,12 @@
 <param ve-entity eid="Q64026160"> <!-- St. Paul's Churchyard -->
 <param ve-entity eid="Q190080"> <!-- Carnegie Mellon University -->
 <param ve-entity eid="Q622664"> <!-- University of California, San Diego -->
+<param ve-entity eid="Q22682088"> <!-- IIIF -->
 
 Print & Probability
 is an interdisciplinary, NSF-funded project at the intersection of book history, computer vision, and machine learning that seeks to discover letterpress printers whose identities have eluded scholars for several hundred years.
 
-<param ve-compare curtain fit="cover" url="https://github.com/chrisvvarren/Print-Probability/blob/main/images/Nhole_lordmayor_1692_title.png?raw=true">
+<param ve-compare curtain fit="cover" title="title test" url="https://github.com/chrisvvarren/Print-Probability/blob/main/images/Nhole_lordmayor_1692_title.png?raw=true">
 <param ve-compare
       url="https://github.com/chrisvvarren/Print-Probability/blob/main/images/lordmayor_nhole.png?raw=true">
 <param ve-compare
@@ -35,6 +36,7 @@ url="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/AtelierTypographi
 ## Our Team
 
 Print & Probability is a collaboration among researchers from Carnegie Mellon University and the University of California, San Diego.  The team's led by [Taylor Berg-Kirkpatrick](https://cseweb.ucsd.edu/~tberg/) (UCSD Computer Science), [Max G'Sell](http://www.stat.cmu.edu/people/faculty/mgsell) (CMU Statistics and Machine Learning), and [Christopher Warren](https://www.cmu.edu/dietrich/history/people/courtesy/warren.html) (CMU English and History) and also includes [Matthew Lincoln](https://matthewlincoln.net/) (CMU Libraries), [Kartik Goyal](https://www.ttic.edu/faculty/goyal/) (TTIC), [Nikolai Vogler](https://nvog.github.io/) (UCSD CS), [Sam Lemley](https://www.library.cmu.edu/about/people/samuel-lemley) (CMU Libraries), and [Craig Stamm](https://www.cmu.edu/dietrich/english/about-us/phds/bios/craig-stamm.html) (CMU English).  
+<param ve-image url="https://github.com/chrisvvarren/Print-Probability/blob/main/images/book_view2.png?raw=True">
 
 ## Publications
 
@@ -48,7 +50,10 @@ Goyal, Kartik, Chris Dyer, Christopher Warren, Max G’Sell, and Taylor Berg-Kir
 Warren, Christopher N., Avery Wiscomb, Pierce Williams, Samuel V. Lemley, and Max G’Sell. “Canst Thou Draw Out Leviathan with Computational Bibliography? New Angles on Printing Thomas Hobbes’ ‘Ornaments’ Edition.” Eighteenth-Century Studies 54, no. 4 (2021): 827–59. [https://doi.org/10.1353/ecs.2021.0094](https://doi.org/10.1353/ecs.2021.0094).
 <param ve-iframe src="https://doi.org/10.1353/ecs.2021.0094">
 
+## Tools
 
+Our [Coloring Book Tool](https://coloringbook.nfshost.com/) analyzes remote IIIF images from repositories such as the British Library, Internet Archive, the Harry Ransom Center, and the Folger Shakespeare Library.  Users can generate and study LUV or RBG color profiles for each page in a digitized book, thereby permitting fine-grained investigations of changes and continuities in paper-stocks, and sequencing of printing.
+<param ve-graphic url="https://coloringbook.nfshost.com/demo_page_correct_small.gif">
 
 ## In the News
 
