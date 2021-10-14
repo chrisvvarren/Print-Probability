@@ -2,7 +2,7 @@
 
 <param ve-config
        title="Print & Probability"
-       banner="https://github.com/chrisvvarren/Print-Probability/blob/main/images/banner.png?raw=true" layout="vertical">
+       banner="https://github.com/chrisvvarren/Print-Probability/blob/main/images/banner2.png?raw=true" layout="vertical">
 
 <!-- banner="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/AtelierTypographie-AVonWerdt.jpg/1280px-AtelierTypographie-AVonWerdt.jpg"
        layout="vertical"> -->
