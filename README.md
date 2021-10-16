@@ -35,13 +35,15 @@ Our team of book historians, statisticians, computer scientists, and librarians 
              url="https://github.com/chrisvvarren/Print-Probability/blob/main/images/leviathan-0347_chunk_014.jpg?raw=true">
 
 Among the aspects we model are <span data-mouseover-image-zoomto="372,330,373,337">fonts and type pieces</span>, <span data-mouseover-image-zoomto="630,452,373,337">paper</span>, <span data-mouseover-image-zoomto="704,417,259,234">inking</span>, and <span data-mouseover-image-zoomto="572,370,224,202">imposition</span>.
-<param ve-image region="372,330,373,337"
-url="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/AtelierTypographie-AVonWerdt.jpg/1280px-AtelierTypographie-AVonWerdt.jpg" license="CC-BY-SA 3.0" attribution="Wikimedia" label="A late 17th-century printshop as depicted by engraver Abraham Von Werdt">
+<param ve-image label="A late 17th-century printshop as depicted by engraver Abraham Von Werdt" region="372,330,373,337"
+url="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/AtelierTypographie-AVonWerdt.jpg/1280px-AtelierTypographie-AVonWerdt.jpg" license="CC-BY-SA 3.0" attribution="Wikimedia">
 
 ## Our Team
 
 Print & Probability is a collaboration among researchers from Carnegie Mellon University and the University of California, San Diego.  The team's led by [Taylor Berg-Kirkpatrick](https://cseweb.ucsd.edu/~tberg/) (UCSD Computer Science), [Max G'Sell](http://www.stat.cmu.edu/people/faculty/mgsell) (CMU Statistics and Machine Learning), and [Christopher Warren](https://www.cmu.edu/dietrich/history/people/courtesy/warren.html) (CMU English and History) and also includes [Matthew Lincoln](https://matthewlincoln.net/) (CMU Libraries), [Kartik Goyal](https://www.ttic.edu/faculty/goyal/) (TTIC), [Nikolai Vogler](https://nvog.github.io/) (UCSD CS), [Sam Lemley](https://www.library.cmu.edu/about/people/samuel-lemley) (CMU Libraries), and [Craig Stamm](https://www.cmu.edu/dietrich/english/about-us/phds/bios/craig-stamm.html) (CMU English).
-<param ve-image region = "523,187,1653,1381" url="https://github.com/chrisvvarren/Print-Probability/blob/main/images/191115D_Pittsburgh_Theological_Research_RD-6.jpg?raw=true" label="Team members Shruti Rijhwani, Pierce Williams, Max G'Sell and Christopher Warren on a research expedition to the Pittsburgh Theological Seminary">  
+<param ve-image region="523,187,1653,1381" url="https://github.com/chrisvvarren/Print-Probability/blob/main/images/191115D_Pittsburgh_Theological_Research_RD-6.jpg?raw=true">  
+
+<!-- label="Team members Shruti Rijhwani, Pierce Williams, Max G'Sell and Christopher Warren on a research expedition to the Pittsburgh Theological Seminary" -->
 
 ## Tools
 
@@ -84,4 +86,6 @@ RBS’s Andrew W. Mellon Society of Fellows in Critical Bibliography Awards Seco
 
 ## Project Alumni
 
-[Shruti Rijhwani](https://shrutirij.github.io/), [Dan Evans](http://danieljevans.net/), [Avery Wiscomb](https://averywiscomb.net/), [Pierce Williams](http://piercew.net/)<param ve-image manifest="https://iiif.archivelab.org/iiif/ldpd_15486283_000$91/manifest.json">
+[Shruti Rijhwani](https://shrutirij.github.io/), [Dan Evans](http://danieljevans.net/), [Avery Wiscomb](https://averywiscomb.net/), [Pierce Williams](http://piercew.net/)
+
+<!-- <param ve-image manifest="https://iiif.archivelab.org/iiif/ldpd_15486283_000$91/manifest.json"> -->
