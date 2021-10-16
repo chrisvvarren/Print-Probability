@@ -84,4 +84,4 @@ RBS’s Andrew W. Mellon Society of Fellows in Critical Bibliography Awards Seco
 
 ## Project Alumni
 
-[Shruti Rijhwani](https://shrutirij.github.io/), [Dan Evans](http://danieljevans.net/), [Avery Wiscomb](https://averywiscomb.net/), [Pierce Williams](http://piercew.net/)<param ve-image region ="787,1589,1504,1291" manifest="https://iiif.archivelab.org/iiif/ldpd_15486283_000$91/manifest.json">
+[Shruti Rijhwani](https://shrutirij.github.io/), [Dan Evans](http://danieljevans.net/), [Avery Wiscomb](https://averywiscomb.net/), [Pierce Williams](http://piercew.net/)<param ve-image manifest="https://iiif.archivelab.org/iiif/ldpd_15486283_000$91/manifest.json">
