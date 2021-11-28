@@ -7,8 +7,8 @@ banner: https://picsum.photos/id/857/1000/400
 
 # When using a custom domain these fields must be updated to match
 # the Github account and repository name
-#acct: <GitHub account/username>
-#repo: <GitHub repository>
+acct: https://github.com/chrisvvarren/
+repo: Print-Probability
 
 ######################################################
 # Defines options shown in the header navigation menu
