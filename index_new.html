@@ -7,7 +7,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy.min.css" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/themes/light-border.min.css" rel="stylesheet"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-  <title>Print and Probability</title>
+  <title>Juncture Digital Homepage</title>
   <style>
     [v-cloak] { display: none; }
     #header, #footer { display: none; }
@@ -166,7 +166,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script> 
 
   <!-- This is used for deep linking of Single Page Apps when hosted with GitHub Pages -->
   <script type="text/javascript">
@@ -186,7 +186,7 @@
   <script>
 
     const ENV = window.location.port ? 'DEV' : 'PROD'
-
+    
     let isJuncture = window.location.hostname.indexOf('juncture-digital.org') === 0 || ENV === 'DEV'
     const junctureVersion = 'main'
     let junctureVersionHash
@@ -279,8 +279,8 @@
           baseUrl: window.location.origin,
           basePath: '',
 =======
-          baseUrl: window.location.origin,
-          basePath: '',
+          baseUrl: window.location.origin, 
+          basePath: '', 
 >>>>>>> 98273ad9b0339261d639b84ea9eb0e5c97bc143a
           assetsBaseUrl: `${window.location.origin}`
         }
@@ -289,10 +289,10 @@
           let ghRepoInfo = await githubRepoInfo(pathElems[0], pathElems[1])
           if (ghRepoInfo) {
             contentSource = {
-              ...contentSource,
-              ...ghRepoInfo,
+              ...contentSource, 
+              ...ghRepoInfo, 
               ...{
-                basePath: `/${ghRepoInfo.acct}/${ghRepoInfo.repo}`,
+                basePath: `/${ghRepoInfo.acct}/${ghRepoInfo.repo}`, 
                 assetsBaseUrl: `https://raw.githubusercontent.com/${ghRepoInfo.acct}/${ghRepoInfo.repo}/${ghRepoInfo.ref}`
               }
             }
@@ -321,7 +321,7 @@
     let qargs = window.location.href.indexOf('?') > 0 ? parseQueryString(window.location.href.split('?')[1]) : {}
 
 =======
-
+    
 >>>>>>> 98273ad9b0339261d639b84ea9eb0e5c97bc143a
     // GLobal variables used to initialize Vue
     let siteConfig, contentSource, componentsList, ghUnscopedToken, oauthAccessToken, gcApiKey, gcAuthDomain, gaPropertyID, fontawesome
@@ -404,8 +404,8 @@
 =======
       if (ENV !== 'DEV') {
         contentSource = {...contentSource, ...{
-            acct: config.acct || contentSource.acct,
-            repo: config.repo || contentSource.repo,
+            acct: config.acct || contentSource.acct, 
+            repo: config.repo || contentSource.repo, 
             ref: qargs.ref || config.ref || contentSource.ref
         }}
       }
@@ -1363,7 +1363,7 @@
     async function getSiteConfig() {
       let config = {}
       let configUrl = ENV === 'DEV'
-        ?  contentSource.repo
+        ?  contentSource.repo 
           ? `${contentSource.assetsBaseUrl}/config.yaml`
           : `${window.location.origin}/config.yaml`
         : window.location.host.indexOf('juncture-digital.org') >= 0
