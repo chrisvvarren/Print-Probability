@@ -7,8 +7,8 @@ description: Print and Probability - research collaboration between Carnegie Mel
 
 # When using a custom domain these fields must be updated to match
 # the Github account and repository name
-acct: https://github.com/chrisvvarren/
-repo: Print-Probability
+#acct: https://github.com/chrisvvarren/
+#repo: Print-Probability
 
 ######################################################
 # Defines options shown in the header navigation menu
