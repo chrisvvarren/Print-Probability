@@ -1,7 +1,7 @@
 
 <template>
   <div ref="header" id="header-component" class="header" :style="containerStyle">
-    
+
     <nav>
       <div id="menuToggle">
         <input type="checkbox" />
@@ -40,7 +40,7 @@
               </li>
               -->
               <li @click="doMenuAction({action:'goto-github'})"><i class="fab fa-github"></i>View on GitHub</li>
-                          
+
               <hr>
               <!--
               <li v-if="isAuthenticated" @click="doMenuAction({action:'create-site'})"><i class="fas fa-plus-circle"></i>Create new site</li>
@@ -61,7 +61,7 @@
         <div class="title" v-html="title"></div>
         <div class="author" v-html="author || tagline"></div>
       </div>
-    
+
     </template>
 
     <template v-else>
@@ -70,7 +70,7 @@
         <div class="title" v-html="title"></div>
         <div class="author" v-html="author || tagline"></div>
       </div>
-    
+
     </template>
 
     <div id="contact-form" class="modal-form" style="display: none;">
@@ -87,7 +87,7 @@
         </div>
       </form>
     </div>
-    
+
   </div>
 </template>
 
@@ -109,7 +109,7 @@
       loginsEnabled: { type: Boolean, default: false },
       contentSource: { type: Object, default: () => ({}) },
       version: { type: String, default: '' },
-    },    
+    },
     data: () => ({
       dependencies: [],
       doActionResponse: {},
@@ -117,10 +117,10 @@
       // for contact-us email
       contactName: null,
       contactEmail: null,
-      contactMessage: null
-    }),    
+      contactMessage: 'inquiry from P&P website'
+    }),
     computed: {
-      containerStyle() { return { 
+      containerStyle() { return {
         height: this.viewerIsActive ? `${this.scrollTop < 400 ? 400 - this.scrollTop : 0}px` : '0',
         backgroundColor: 'white',
         backgroundImage: `url(${this.banner})`
@@ -169,7 +169,7 @@
       }
 
     },
-  
+
     watch: {
       doActionCallback(resp) { this.doActionResponse = resp },
     }
@@ -205,7 +205,7 @@
     align-items: stretch;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
       "title"
       "author";
     color: white;
@@ -281,7 +281,7 @@
     transform-origin: 0% 100%;
   }
 
-  /* 
+  /*
   * Transform all the slices of hamburger
   * into a crossmark.
   */
