@@ -22,8 +22,9 @@
 
 Print & Probability
 is an interdisciplinary, NSF-funded project at the intersection of book history, computer vision, and machine learning that seeks to discover letterpress printers whose identities have eluded scholars for several hundred years.
-<param ve-image region="1171,890,727,311" url="https://github.com/chrisvvarren/Print-Probability/blob/main/images/191115D_Pittsburgh_Theological_Research_RD-19.jpg?raw=true" attribution="Carnegie Mellon University">
-
+<param ve-image region="1171,890,727,311" fit="cover" url="https://github.com/chrisvvarren/Print-Probability/blob/main/images/191115D_Pittsburgh_Theological_Research_RD-19.jpg?raw=true" attribution="Carnegie Mellon University" >
+<!-- <param ve-graphic img="https://github.com/chrisvvarren/Print-Probability/blob/main/images/191115D_Pittsburgh_Theological_Research_RD-19.jpg?raw=true" attribution="Carnegie Mellon University" > -->
+<!-- region="1171,890,727,311" -->
 
 ## What We Do
 
@@ -50,10 +51,7 @@ Print & Probability is a collaboration among researchers from Carnegie Mellon Un
 Our beta [Coloring Book Paper Analysis Tool](https://coloringbook.nfshost.com/) analyzes remote IIIF images from repositories such as the British Library, Internet Archive, the Harry Ransom Center, and the Folger Shakespeare Library.  Users can generate and study LUV or RBG color profiles for each page in a digitized book, thereby permitting fine-grained investigations of changes and continuities in paper-stocks, and sequencing of printing.
 <param ve-graphic url="https://coloringbook.nfshost.com/demo_rect_select_small.gif">
 
-The [Print & Probability Workbench](https://github.com/cmu-lib/printprob-db) we use internally is a Django-powered REST [API for powering P&P's data transformation and tagging pipeline](https://printprobdb.psc.edu/api/docs/).
-
-
-To classify characters, we use [Ocular](https://github.com/tberg12/ocular), a state-of-the-art historical OCR system developed in part by team co-lead Taylor Berg-Kirkpatrick.  
+The [Print & Probability Workbench](https://github.com/cmu-lib/printprob-db) we use internally is a Django-powered REST [API for powering P&P's data transformation and tagging pipeline](https://printprobdb.psc.edu/api/docs/).  To classify characters, we use [Ocular](https://github.com/tberg12/ocular), a state-of-the-art historical OCR system developed in part by team co-lead Taylor Berg-Kirkpatrick.  <param ve-graphic img="./images/workbench.gif">
 
 ## Publications
 
