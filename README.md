@@ -22,7 +22,7 @@
 
 Print & Probability
 is an interdisciplinary, NSF-funded project at the intersection of book history, computer vision, and machine learning that seeks to discover letterpress printers whose identities have eluded scholars for several hundred years.
-<param ve-image region="1171,890,727,311" fit="cover" url="https://github.com/chrisvvarren/Print-Probability/blob/main/images/191115D_Pittsburgh_Theological_Research_RD-19.jpg?raw=true" attribution="Carnegie Mellon University" >
+<param ve-image region="1171,890,727,311" fit="cover" title="P&P Researchers at Pittsburgh Theological Seminary" url="https://github.com/chrisvvarren/Print-Probability/blob/main/images/191115D_Pittsburgh_Theological_Research_RD-19.jpg?raw=true" attribution="Carnegie Mellon University" >
 <!-- <param ve-graphic img="https://github.com/chrisvvarren/Print-Probability/blob/main/images/191115D_Pittsburgh_Theological_Research_RD-19.jpg?raw=true" attribution="Carnegie Mellon University" > -->
 <!-- region="1171,890,727,311" -->
 
