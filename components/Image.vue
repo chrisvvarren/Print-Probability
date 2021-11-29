@@ -1,6 +1,6 @@
 <template>
   <div class="image-viewer" :style="osdContainerStyle">
-    
+
       <div class="osd" id="osd"></div>
       <div id="osd-toolbar" class="controls auto-hide">
         <span id="go-home"><i class="fas fa-home"></i></span>
@@ -39,12 +39,12 @@
         </div>
         <div class="annos" v-html="annoText" @click="copyAnnoIdToClipboard"></div>
       </div>
-  
+
       <input v-if="viewerItems && viewerItems.length > 1 && (mode === 'layers' || mode === 'curtain')"
-            class="slider" 
+            class="slider"
             v-model="sliderPct" type="range" min="0" max="100" value="0"
       >
-      
+
       <div class="citation">
         <span v-if='title || itemLabel || description' v-html="title || itemLabel || description" class="image-label"></span><br>
         <span v-if="attribution" v-html="attribution" class="attribution"></span>
@@ -69,8 +69,8 @@ const prefixUrl = 'https://openseadragon.github.io/openseadragon/images/'
 
 const dependencies = [
   'https://cdn.jsdelivr.net/npm/openseadragon@2.4/build/openseadragon/openseadragon.min.js',
-  'https://gitcdn.link/repo/jstor-labs/juncture/main/js/openseadragon-annotorious-2.3.1.min.js',
-  'https://gitcdn.link/repo/jstor-labs/juncture/main/css/annotorious-2.3.1.min.css',
+  'https://cdn.jsdelivr.net/npm/@recogito/annotorious-openseadragon@2.5.3/dist/annotorious.min.css',
+  'https://cdn.jsdelivr.net/npm/@recogito/annotorious-openseadragon@2.5.3/dist/openseadragon-annotorious.min.js',
   'https://cdn.jsdelivr.net/npm/sjcl@1.0.8/sjcl.min.js'
   // 'https://altert.github.io/OpenseadragonFabricjsOverlay/openseadragon-fabricjs-overlay.js',
   // 'https://altert.github.io/OpenseadragonFabricjsOverlay/fabric/fabric.adapted.js'
@@ -187,8 +187,8 @@ module.exports = {
     hasPreviousAnnotation() { return this.annoCursor > 0 },
     annoText() { return this.hasAnnotations ? this.annotations[this.annoCursor].body[0].value : '' },
     metadata() {
-      return this.currentItem && this.currentItem.metadata 
-        ? Object.fromEntries(this.currentItem.metadata.map(md => [md.label, md.value])) 
+      return this.currentItem && this.currentItem.metadata
+        ? Object.fromEntries(this.currentItem.metadata.map(md => [md.label, md.value]))
         : {}
     },
     //label() { return this.currentItem ? this.currentItem.label || this.metadata.label : null },
@@ -223,7 +223,7 @@ module.exports = {
       }
     },
     //imageInfo(){ return this.currentItem && this.currentItem.metadata ? this.parseManifest : null }
-    
+
   },
   mounted() {
     this.osdElem = document.getElementById('osd')
@@ -262,7 +262,7 @@ module.exports = {
           // previousButton: 'previous',
           visibilityRatio: 1.0,
           constrainDuringPan: true,
-          // minZoomImageRatio: 0, 
+          // minZoomImageRatio: 0,
           minZoomImageRatio: 0.6,
           // maxZoomPixelRatio: Infinity,
           maxZoomPixelRatio: 10,
@@ -288,7 +288,7 @@ module.exports = {
             showReferenceStrip: false,
             collectionMode: true,
             collectionRows: 1
-          }}  
+          }}
         }
         this.viewer = OpenSeadragon(options)
         this.initAnnotator()
@@ -446,7 +446,7 @@ module.exports = {
       } else {
         annosPath = `${this.mdDir}${this.currentItemSourceHash}.json`
       }
-       
+
       console.log(`loadAnnotations: path=${annosPath}`)
       this.getFile(annosPath).then(annos => {
         if (annos && annos.content && annos.content.length > 0) {
@@ -477,7 +477,7 @@ module.exports = {
      } else {
       document.getElementById("annotatorIcon").style.backgroundColor = "transparent";
      }
-      
+
     },
     setAnnotatorEnabled(enabled) {
       console.log(`setAnnotatorEnabled=${enabled}`)
@@ -548,7 +548,7 @@ module.exports = {
             return this.viewer.viewport.imageToViewportRectangle(
               Math.round(size.x * ints[0]/100),
               Math.round(size.y * ints[1]/100),
-              Math.round(size.x * ints[2]/100), 
+              Math.round(size.x * ints[2]/100),
               Math.round(size.y * ints[3]/100)
             )
           }
@@ -604,8 +604,8 @@ module.exports = {
                     }
                   }
                   break
-                
-              }                        
+
+              }
               break
           case 'mouseover':
               switch(action) {
@@ -616,7 +616,7 @@ module.exports = {
                     this.gotoRegion(region)
                   }
                   break
-              }                        
+              }
               break
       }
     },
@@ -664,7 +664,7 @@ module.exports = {
       }
       if (licenseCode) {
         if (licenseCode.toUpperCase() === 'PD' || licenseCode.toUpperCase() === 'public domain') {
-          
+
           licenseUrl = licenseUrl || 'https://creativecommons.org/publicdomain/mark/1.0'
           licenseIcons = [ccLicenseIcons.PD]
         } else if (licenseCode.indexOf('CC0') === 0) {
@@ -717,11 +717,11 @@ module.exports = {
         if (manifest['@id']) { content['IIIF id'] = manifest['@id'] }
 
         for(var key in content){
-          
+
             html+= '<tr style="background:none; padding: 0px">';
             html+= '<td style="background:none; padding: 5px;max-width: 200px;overflow: auto;">' + key + '</td>';
             if (key == 'license' && this.license && this.licenseUrl){
-              html += '<td style="background:none; padding: 5px;max-width: 200px;overflow: auto;">' + 
+              html += '<td style="background:none; padding: 5px;max-width: 200px;overflow: auto;">' +
                       '<span v-if="licenseUrl" class="licenses"><a :href="licenseUrl" target="_blank"><i v-for="(icon, idx) in licenseIcons" :key="idx" :class="icon"></i></a></span></td>';
             }
             else {
@@ -767,7 +767,7 @@ module.exports = {
           preventOverflow: { enabled: true },
           hideOnClick: true,
           // theme: 'light-border',
-          
+
           onShow: (instance) => {
             instance.setContent(this.imageInfo)
             //setTimeout(() => { instance.hide() }, 10000)
@@ -777,12 +777,12 @@ module.exports = {
           }
         })
       }
-    
+
     }
   },
   beforeDestroy() {
     // this.actionSources.forEach(elem => elem.classList.remove('image-interaction'))
-  },        
+  },
   watch: {
     isAuthenticated() {
       if (this.annotator) this.annotator.readOnly = !this.isAuthenticated
@@ -856,7 +856,7 @@ module.exports = {
           this.gotoRegion(this.goToRegionCoords)
           this.goToRegionCoords = null;
         })
-        
+
       }
     },
     actions: {
@@ -974,7 +974,7 @@ module.exports = {
 
     .osd {
       /* row-start / column-start / row-end / column-end */
-      grid-area: 1 / 1 / 5 / 3; 
+      grid-area: 1 / 1 / 5 / 3;
       width: 100%;
       height: 100%;
       background: gray;
@@ -993,7 +993,7 @@ module.exports = {
     }
 
     .slider {
-      grid-area: 3 / 1 / 4 / 3; 
+      grid-area: 3 / 1 / 4 / 3;
       width: 95%;
       justify-self: center;
       align-self: center;
@@ -1145,7 +1145,7 @@ module.exports = {
     .slider {
       -webkit-appearance: none;
       height: 5px;
-      border-radius: 5px;  
+      border-radius: 5px;
       background: #d3d3d3;
       outline: black;
       opacity: 0.7;
@@ -1161,7 +1161,7 @@ module.exports = {
       appearance: none;
       width: 15px;
       height: 15px;
-      border-radius: 50%; 
+      border-radius: 50%;
       background: beige;
       cursor: pointer;
     }
@@ -1208,6 +1208,6 @@ module.exports = {
     .info-box {
       z-index: 11,
     }
-    
+
 
 </style>
