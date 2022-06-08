@@ -42,7 +42,7 @@ url="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/AtelierTypographi
 ## Our Team
 
 Print & Probability is a collaboration among researchers from Carnegie Mellon University and the University of California, San Diego.  The team's led by [Taylor Berg-Kirkpatrick](https://cseweb.ucsd.edu/~tberg/) (UCSD Computer Science), [Max G'Sell](http://www.stat.cmu.edu/people/faculty/mgsell) (CMU Statistics and Machine Learning), and [Christopher Warren](https://www.cmu.edu/dietrich/history/people/courtesy/warren.html) (CMU English and History) and also includes [Matthew Lincoln](https://matthewlincoln.net/) (JSTOR Labs), [Kartik Goyal](https://www.ttic.edu/faculty/goyal/) (TTIC), [Nikolai Vogler](https://nvog.github.io/) (UCSD CS PhD Student), [Sam Lemley](https://www.library.cmu.edu/about/people/samuel-lemley) (CMU Libraries), Elizaveta Pertseva (UCSD undergrad), [Kari Thomas](https://www.cmu.edu/dietrich/history/people/graduate-students/thomas.html) (CMU History PhD Student), [D.J. Schuldt](https://www.linkedin.com/in/dj-schuldt-05045171) (Simmmons MLIS student), and [Elizabeth Dietrich](https://www.cmu.edu/dietrich/english/about-us/phds/bios/elizabeth-dieterich.html) (CMU English PhD Student).
-<param ve-image region="523,187,1653,1381" url="https://github.com/chrisvvarren/Print-Probability/blob/main/images/191115D_Pittsburgh_Theological_Research_RD-6.jpg?raw=true">  
+<param ve-image region="523,187,1653,1381" url="https://github.com/chrisvvarren/Print-Probability/blob/main/images/DC-220329A-NEH-Grant169.jpg?raw=true">  
 
 <!-- label="Team members Shruti Rijhwani, Pierce Williams, Max G'Sell and Christopher Warren on a research expedition to the Pittsburgh Theological Seminary" -->
 
@@ -94,6 +94,7 @@ RBS’s Andrew W. Mellon Society of Fellows in Critical Bibliography Awards Seco
 ## Project Alumni
 
 [Shruti Rijhwani](https://shrutirij.github.io/), [Dan Evans](http://danieljevans.net/), [Avery Wiscomb](https://averywiscomb.net/), [Pierce Williams](http://piercew.net/), [Craig Stamm](https://www.cmu.edu/dietrich/english/about-us/phds/bios/craig-stamm.html)
+<param ve-image region="523,187,1653,1381" url="https://github.com/chrisvvarren/Print-Probability/blob/main/images/191115D_Pittsburgh_Theological_Research_RD-6.jpg?raw=true">
 
 ## Project Support
 
