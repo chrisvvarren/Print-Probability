@@ -41,8 +41,8 @@ url="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/AtelierTypographi
 
 ## Our Team
 
-Print & Probability is a collaboration among researchers from Carnegie Mellon University and the University of California, San Diego.  The team's led by [Taylor Berg-Kirkpatrick](https://cseweb.ucsd.edu/~tberg/) (UCSD Computer Science), [Max G'Sell](http://www.stat.cmu.edu/people/faculty/mgsell) (CMU Statistics and Machine Learning), and [Christopher Warren](https://www.cmu.edu/dietrich/history/people/courtesy/warren.html) (CMU English and History) and also includes [Matthew Lincoln](https://matthewlincoln.net/) (JSTOR Labs), [Kartik Goyal](https://www.ttic.edu/faculty/goyal/) (TTIC), [Nikolai Vogler](https://nvog.github.io/) (UCSD CS PhD Student), [Sam Lemley](https://www.library.cmu.edu/about/people/samuel-lemley) (CMU Libraries), Elizaveta Pertseva (UCSD undergrad), [Kari Thomas](https://www.cmu.edu/dietrich/history/people/graduate-students/thomas.html) (CMU History PhD Student), [D.J. Schuldt](https://www.linkedin.com/in/dj-schuldt-05045171) (Simmmons MLIS student), and [Elizabeth Dietrich](https://www.cmu.edu/dietrich/english/about-us/phds/bios/elizabeth-dieterich.html) (CMU English PhD Student).
-<param ve-image region="523,187,1653,1381" url="https://github.com/chrisvvarren/Print-Probability/blob/main/images/DC-220329A-NEH-Grant169.jpg?raw=true">  
+Print & Probability is a collaboration among researchers from Carnegie Mellon University and the University of California, San Diego.  The team's led by [Taylor Berg-Kirkpatrick](https://cseweb.ucsd.edu/~tberg/) (UCSD Computer Science), [Max G'Sell](http://www.stat.cmu.edu/people/faculty/mgsell) (CMU Statistics and Machine Learning), and [Christopher Warren](https://www.cmu.edu/dietrich/history/people/courtesy/warren.html) (CMU English and History) and also includes [Matthew Lincoln](https://matthewlincoln.net/) (JSTOR Labs), [Kartik Goyal](https://www.ttic.edu/faculty/goyal/) (TTIC), [Nikolai Vogler](https://nvog.github.io/) (UCSD CS PhD Student), [Sam Lemley](https://www.library.cmu.edu/about/people/samuel-lemley) (CMU Libraries), Elizaveta Pertseva (UCSD undergrad), [Kari Thomas](https://www.cmu.edu/dietrich/history/people/graduate-students/thomas.html) (CMU History PhD Student), [D.J. Schuldt](https://www.linkedin.com/in/dj-schuldt-05045171) (Simmmons MLIS student), [Elizabeth Dietrich](https://www.cmu.edu/dietrich/english/about-us/phds/bios/elizabeth-dieterich.html) (CMU English PhD Student), and [Laura DeLuca](https://www.cmu.edu/dietrich/english/about-us/phds/bios/laura-deluca.html) (CMU English PhD Student).
+<param ve-image region="-187,-484,6345,4949" url="https://github.com/chrisvvarren/Print-Probability/blob/main/images/DC-220329A-NEH-Grant169.jpg?raw=true">  
 
 <!-- label="Team members Shruti Rijhwani, Pierce Williams, Max G'Sell and Christopher Warren on a research expedition to the Pittsburgh Theological Seminary" -->
 
@@ -81,7 +81,7 @@ David M. Shribman: _The Lessons of_ Areopagitica
 <param ve-iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/719460085&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
 
 CMU Projects Sleuth Secret Printers, Teach Shakespeare in VR
-<param ve-iframe src="https://www.cmu.edu/news/stories/archives/2022/april/humanities-grants.html"> 
+<param ve-iframe src="https://www.cmu.edu/news/stories/archives/2022/april/humanities-grants.html">
 
 CMU Receives NEH Grant To Develop Bibliographic Tools
 <param ve-iframe src="https://www.libraryjournal.com/story/cmu-receives-mellon-grant-to-develop-bibliographic-tools">
@@ -98,5 +98,5 @@ RBS’s Andrew W. Mellon Society of Fellows in Critical Bibliography Awards Seco
 
 ## Project Support
 
-Print and Probability gratefully acknowledges grants from CMU Mellon Seed Grants, the  National Science Foundation, and the National Endowment for the Humanities. 
+Print and Probability gratefully acknowledges grants from CMU Mellon Seed Grants, the  National Science Foundation, and the National Endowment for the Humanities.
 <!-- <param ve-image manifest="https://iiif.archivelab.org/iiif/ldpd_15486283_000$91/manifest.json"> -->
