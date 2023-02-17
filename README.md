@@ -73,7 +73,8 @@ Warren, Christopher N., Avery Wiscomb, Pierce Williams, Samuel V. Lemley, and Ma
 America (2023)
 * "The Early Modern Book of Numbers," Shakespeare Association of America (2023)
 * "Contrastive Attention Networks for Attribution of Early Modern Print,” Association for the Advancement of Artificial Intelligence (AAAI) (2023)
-* "Freedom and the Press before Freedom of the Press," The Grolier Club Bibliography Week Lecture (2023)
+* "Freedom and the Press before Freedom of the Press," The Grolier Club Bibliography Week Lecture (2023) 
+<param ve-video id="7iBuxz69rvA" title="Grolier Club Bibliography Week Lecture">
 * "Shakespeare, Print Networks, and the History of Clandestine Printing,” Networks 2021
 * “Computational Bibliography: Techniques and Analyses,” Association for Computers and Humanities (2021)
 
