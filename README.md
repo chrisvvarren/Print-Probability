@@ -62,7 +62,6 @@ Warren, Christopher, Pierce Williams, Shruti Rijhwani, and Max G’Sell. “Dama
 Goyal, Kartik, Chris Dyer, Christopher Warren, Max G’Sell, and Taylor Berg-Kirkpatrick. “A Probabilistic Generative Model for Typographical Analysis of Early Modern Printing.” ArXiv:2005.01646 [Cs], May 4, 2020. [http://arxiv.org/abs/2005.01646](http://arxiv.org/abs/2005.01646).
 <param ve-iframe src="https://arxiv.org/pdf/2005.01646.pdf">
 
-
 Warren, Christopher N., Avery Wiscomb, Pierce Williams, Samuel V. Lemley, and Max G’Sell. “Canst Thou Draw Out Leviathan with Computational Bibliography? New Angles on Printing Thomas Hobbes’ ‘Ornaments’ Edition.” Eighteenth-Century Studies 54, no. 4 (2021): 827–59. [https://doi.org/10.1353/ecs.2021.0094](https://doi.org/10.1353/ecs.2021.0094).
 <param ve-iframe src="https://doi.org/10.1353/ecs.2021.0094">
 
@@ -73,8 +72,10 @@ Warren, Christopher N., Avery Wiscomb, Pierce Williams, Samuel V. Lemley, and Ma
 America (2023)
 * "The Early Modern Book of Numbers," Shakespeare Association of America (2023)
 * "Contrastive Attention Networks for Attribution of Early Modern Print,” Association for the Advancement of Artificial Intelligence (AAAI) (2023)
-* "Freedom and the Press before Freedom of the Press," The Grolier Club Bibliography Week Lecture (2023) 
+
+* "Freedom and the Press before Freedom of the Press," The Grolier Club Bibliography Week Lecture (2023)
 <param ve-video id="7iBuxz69rvA" title="Grolier Club Bibliography Week Lecture">
+
 * "Shakespeare, Print Networks, and the History of Clandestine Printing,” Networks 2021
 * “Computational Bibliography: Techniques and Analyses,” Association for Computers and Humanities (2021)
 
