@@ -89,8 +89,7 @@ David M. Shribman: _The Lessons of_ Areopagitica
 [PODCAST: NLP Highlights] _Automated Analysis Of Historical Printed Documents, with **Taylor Berg-Kirkpatrick**_
 <param ve-iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/719460085&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
 
-CMU Projects Sleuth Secret Printers, Teach Shakespeare in VR
-<param ve-iframe src="https://www.cmu.edu/ambassadors/july-2022/humanities-projects.html">
+[CMU Projects Sleuth Secret Printers, Teach Shakespeare in VR](https://www.cmu.edu/ambassadors/july-2022/humanities-projects.html)
 
 CMU Receives NEH Grant To Develop Bibliographic Tools
 <param ve-iframe src="https://www.libraryjournal.com/story/cmu-receives-mellon-grant-to-develop-bibliographic-tools">
