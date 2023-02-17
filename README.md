@@ -66,7 +66,16 @@ Goyal, Kartik, Chris Dyer, Christopher Warren, Max G’Sell, and Taylor Berg-Kir
 Warren, Christopher N., Avery Wiscomb, Pierce Williams, Samuel V. Lemley, and Max G’Sell. “Canst Thou Draw Out Leviathan with Computational Bibliography? New Angles on Printing Thomas Hobbes’ ‘Ornaments’ Edition.” Eighteenth-Century Studies 54, no. 4 (2021): 827–59. [https://doi.org/10.1353/ecs.2021.0094](https://doi.org/10.1353/ecs.2021.0094).
 <param ve-iframe src="https://doi.org/10.1353/ecs.2021.0094">
 
+## Recent and Upcoming Presentations
 
+* “Whig Data: Milton’s Printers in the Restoration,” International Milton Society (2023)
+* “Mincing Words: Computational Bibliography as Cookery,” Renaissance Society of
+America (2023)
+* "The Early Modern Book of Numbers," Shakespeare Association of America (2023)
+* "Contrastive Attention Networks for Attribution of Early Modern Print,” Association for the Advancement of Artificial Intelligence (AAAI) (2023)
+* "Freedom and the Press before Freedom of the Press," The Grolier Club Bibliography Week Lecture (2023)
+* "Shakespeare, Print Networks, and the History of Clandestine Printing,” Networks 2021
+* “Computational Bibliography: Techniques and Analyses,” Association for Computers and Humanities (2021)
 
 ## In the News
 
@@ -81,7 +90,7 @@ David M. Shribman: _The Lessons of_ Areopagitica
 <param ve-iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/719460085&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
 
 CMU Projects Sleuth Secret Printers, Teach Shakespeare in VR
-<param ve-iframe src="https://www.cmu.edu/news/stories/archives/2022/april/humanities-grants.html">
+<param ve-iframe src="https://www.cmu.edu/ambassadors/july-2022/humanities-projects.html">
 
 CMU Receives NEH Grant To Develop Bibliographic Tools
 <param ve-iframe src="https://www.libraryjournal.com/story/cmu-receives-mellon-grant-to-develop-bibliographic-tools">
@@ -89,7 +98,7 @@ CMU Receives NEH Grant To Develop Bibliographic Tools
 ## Awards
 
 RBS’s Andrew W. Mellon Society of Fellows in Critical Bibliography Awards Second Annual Essay Prize (Honorable Mention)
-<param ve-iframe src="https://rarebookschool.org/news/rbss-andrew-w-mellon-society-of-fellows-in-critical-bibliography-awards-second-annual-essay-prize/">
+<param ve-iframe src="https://rarebookschool.org/rbss-andrew-w-mellon-society-of-fellows-in-critical-bibliography-awards-second-annual-essay-prize/">
 
 ## Project Alumni
 
