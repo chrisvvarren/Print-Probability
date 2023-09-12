@@ -321,8 +321,11 @@
     const knownGhAccts = {'jstor-labs': 'main', 'kent-map': 'main'}
 
     async function headRef(acct, repo, ref, token) { 
-      token = token || oauthAccessToken || ghUnscopedToken
-      console.log(`Inside headRef with token: ${token}`);
+      
+      console.log(`Inside headRef with token: ${token} oauthAccessToken: ${oauthAccessToken} ghUnscopedToken: ${ghUnscopedToken}`);
+      
+      token = token || oauthAccessToken || ghUnscopedToken;
+
       let heads, tags, found, sha
       let resp = await fetch(`https://api.github.com/repos/${acct}/${repo}/git/refs/heads`, {
         headers: {Authorization: `Token ${token}`, Accept: 'application/vnd.github.v3+json'} })
@@ -1391,7 +1394,9 @@
 
     // Gets site config
     async function getSiteConfig() {
+      
       let config = {}
+      
       let configUrl = ENV === 'DEV'
         ?  contentSource.repo 
           ? `${contentSource.assetsBaseUrl}/config.yaml`
