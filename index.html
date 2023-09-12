@@ -1403,9 +1403,14 @@
           : `${window.location.origin}/config.yaml`
         : window.location.host.indexOf('juncture-digital.org') >= 0
           ? `https://juncture-digital.org/config.yaml`
-          : `${window.location.origin}${contentSource.basePath}/config.yaml`
+          : `${window.location.origin}${contentSource.basePath}/config.yaml`;
+
+      console.log(`Config URL: ${configUrl}`);
+
       let resp = await fetch(configUrl)
       if (resp.ok) config = YAML.parse(await resp.text())
+
+      console.log(`config: ${JSON.stringify(config)}`);
 
       ghUnscopedToken = config.ghUnscopedToken 
         ? atob(config.ghUnscopedToken)
