@@ -56,6 +56,11 @@ The [Print & Probability Workbench](https://github.com/cmu-lib/printprob-db) we 
 
 ## Publications
 
+Warren, Christopher N, Samuel V Lemley, D J Schuldt, Elizabeth Dieterich, Laura S DeLuca, Max G’Sell, Taylor Berg-Kirkpatrick, Kari Thomas, Kartik Goyal, and Nikolai Vogler. “Who Rpinted Shakespeare’s Fourth Folio?” Shakespeare Quarterly 74, no. 2 (June 9, 2023): 139–46. [https://doi.org/10.1093/sq/quad021](https://doi.org/10.1093/sq/quad021).
+<param ve-iframe src="https://hcommons.org/deposits/view/hc:57952/CONTENT/quad021-1.pdf/">
+
+Vogler, Nikolai, Kartik Goyal, Kishore PV Reddy, Elizaveta Pertzeva, Samuel V. Lemley, Christopher N. Warren, Max G’Sell, and Taylor Berg-Kirkpatrick. “Contrastive Attention Networks for Attribution of Early Modern Print.” In Association for the Advancement of Artificial Intelligence (AAAI), 2023. [https://arxiv.org/abs/2306.07998](https://arxiv.org/abs/2306.07998)
+
 Warren, Christopher, Pierce Williams, Shruti Rijhwani, and Max G’Sell. “Damaged Type and Areopagitica’s Clandestine Printers.” Milton Studies 62, no. 1 (Spring 2020). [https://www.jstor.org/stable/10.5325/miltonstudies.62.1.0001](https://www.jstor.org/stable/10.5325/miltonstudies.62.1.0001).
 <param ve-iframe src="https://doi.org/10.1353/mlt.2020.0005">
 
