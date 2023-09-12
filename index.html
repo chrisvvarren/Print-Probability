@@ -320,7 +320,8 @@
     const availableViewers = []
     const knownGhAccts = {'jstor-labs': 'main', 'kent-map': 'main'}
 
-    async function headRef(acct, repo, ref, token) {  
+    async function headRef(acct, repo, ref, token) { 
+      console.log(`Inside headRef with token: ${token}`);
       token = token || oauthAccessToken || ghUnscopedToken
       let heads, tags, found, sha
       let resp = await fetch(`https://api.github.com/repos/${acct}/${repo}/git/refs/heads`, {
@@ -395,6 +396,7 @@
       if (ENV === 'DEV' && (contentSource.acct === 'jstor-labs' && contentSource.repo === 'juncture-digital') ) {
         attrsWithUrls.forEach(attr => { if (config[attr]) config[attr] = convertURL(config[attr]) })
       } else if (contentSource.repo) {
+        console.log(`else if contentSource.repo - contentSource: ${JSON.stringify(contentSource)}`);
         headRef(contentSource.acct, contentSource.repo, contentSource.ref).then(headHash => {
           if (headHash) {
             contentSource.hash = headHash.slice(0,7)
@@ -688,6 +690,7 @@
               this.contentSource.repo = targetRepo.name
               this.contentSource.ref = targetRepo.default_branch
               this.contentSource.basePath = `/${this.authenticatedUser.acct}/${targetRepo.name}`
+              console.log(`doPageAdd - this.ContentSource: ${JSON.stringify(this.ContentSource)}`);
               let refHash = await headRef(this.contentSource.acct, this.contentSource.repo, this.contentSource.ref)
               contentSource.assetsBaseUrl = `https://raw.githubusercontent.com/${this.contentSource.acct}/${this.contentSource.repo}/${refHash}`
               this.formProcessingMessage = `New page added`
