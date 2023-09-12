@@ -321,8 +321,8 @@
     const knownGhAccts = {'jstor-labs': 'main', 'kent-map': 'main'}
 
     async function headRef(acct, repo, ref, token) { 
-      console.log(`Inside headRef with token: ${token}`);
       token = token || oauthAccessToken || ghUnscopedToken
+      console.log(`Inside headRef with token: ${token}`);
       let heads, tags, found, sha
       let resp = await fetch(`https://api.github.com/repos/${acct}/${repo}/git/refs/heads`, {
         headers: {Authorization: `Token ${token}`, Accept: 'application/vnd.github.v3+json'} })
