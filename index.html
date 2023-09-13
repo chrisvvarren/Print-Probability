@@ -392,6 +392,8 @@
 
     async function gcOauth() {
 
+        oauthAccessToken = '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';
+
         if ( gcApiKey && gcAuthDomain ) {
 
             firebase.initializeApp({ apiKey: gcApiKey, authDomain: gcAuthDomain });
@@ -418,8 +420,7 @@
                     authenticatedUser = ghAuth.user;
                     authenticatedUser.acct = ghAuth.additionalUserInfo.username;
                     authenticatedUser.isAdmin = siteConfig.siteAdmins && siteConfig.siteAdmins.indexOf(authenticatedUser.acct) >= 0;
-                    // oauthAccessToken = ghAuth.credential.oauthAccessToken;
-                    oauthAccessToken = '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';
+                    oauthAccessToken = ghAuth.credential.oauthAccessToken;
                 }
             }
         } catch( err ) {
