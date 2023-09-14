@@ -320,175 +320,92 @@
     const availableViewers = []
     const knownGhAccts = {'jstor-labs': 'main', 'kent-map': 'main'}
 
-    async function headRef(acct, repo, ref, token) { 
-      
-        console.log(`Inside headRef with token: ${token} oauthAccessToken: ${oauthAccessToken} ghUnscopedToken: ${ghUnscopedToken}`);
-      
-        token = token || oauthAccessToken || ghUnscopedToken;
-
-        let heads, tags, found, sha;
-
-        let resp = await fetch(
-            `https://api.github.com/repos/${acct}/${repo}/git/refs/heads`,
-            { 
-                headers: {
-                    Authorization: `Token ${token}`,
-                    Accept: 'application/vnd.github.v3+json'
-                }
-            }
-        );
-
-        if ( resp.ok ) {
-        
-            heads = await resp.json();
-            found = heads.find(head => head.ref === `refs/heads/${ref}`);
-            sha = found ? found.object.sha : null;
+    async function headRef(acct, repo, ref, token) {  
+      token = token || oauthAccessToken || ghUnscopedToken
+      let heads, tags, found, sha
+      let resp = await fetch(`https://api.github.com/repos/${acct}/${repo}/git/refs/heads`, {
+        headers: {Authorization: `Token ${token}`, Accept: 'application/vnd.github.v3+json'} })
+      if (resp.ok) {
+        heads = await resp.json()
+        found = heads.find(head => head.ref === `refs/heads/${ref}`)
+        sha = found ? found.object.sha : null
+      } 
+      if (!sha) {
+        resp = await fetch(`https://api.github.com/repos/${acct}/${repo}/tags`, {
+          headers: {Authorization: `Token ${token}`, Accept: 'application/vnd.github.v3+json'} })
+        if (resp.ok) {
+          tags = await resp.json()
+          found = tags.find(tag => tag.name === ref)
+          sha = found ? found.commit.sha : null
         }
-
-        if ( !sha ) {
-        
-            resp = await fetch(
-                `https://api.github.com/repos/${acct}/${repo}/tags`,
-                {
-                    headers: {
-                        Authorization: `Token ${token}`,
-                        Accept: 'application/vnd.github.v3+json'
-                    }
-                }
-            );
-
-            if ( resp.ok ) {
-                
-                tags = await resp.json();
-                found = tags.find(tag => tag.name === ref);
-                sha = found ? found.commit.sha : null;
-            }
-        }
-
-        return sha;
+      }
+      return sha
     }
 
     async function getFile(acct, repo, ref, path, token) {
-
-        token = token || oauthAccessToken || ghUnscopedToken;
-
-        let content;
-        let resp = await fetch(
-            `https://api.github.com/repos/${acct}/${repo}/contents${path}?ref=${ref}`,
-            {
-                headers: {
-                    Authorization:`Token ${token}`
-                }
-            }
-        );
-
-        if ( resp.ok ) {
-            resp = await resp.json();
-            content = decodeURIComponent(escape(atob(resp.content)));
-        }
-
-        return Promise.resolve(content);
+      token = token || oauthAccessToken || ghUnscopedToken
+      let content
+      let resp = await fetch(`https://api.github.com/repos/${acct}/${repo}/contents${path}?ref=${ref}`, {headers: {Authorization:`Token ${token}`}})
+      if (resp.ok) {
+        resp = await resp.json()
+        content = decodeURIComponent(escape(atob(resp.content)))
+      }
+      return Promise.resolve(content)
     }
 
     async function gcOauth() {
-
-        oauthAccessToken = 'Z2l0aHViX3BhdF8xMUFQTFIzMkEweU80SlR0UVhDQ3pJX2E2TG1SR1FxS3dXN25PZDcyOVlVZkFGa09YZXpJb0dXNURPcFBXNEZtYnJRTkJWRzVYTjIwallMTnhp';
-
-        if ( gcApiKey && gcAuthDomain ) {
-
-            firebase.initializeApp({ apiKey: gcApiKey, authDomain: gcAuthDomain });
-
-            let result = await firebase.auth().getRedirectResult();
-            if ( result.credential ) {
-
-                window.localStorage.setItem('ghAuth', JSON.stringify(result));
-            }
+      if (gcApiKey && gcAuthDomain) {
+        firebase.initializeApp({apiKey: gcApiKey, authDomain: gcAuthDomain})
+        let result = await firebase.auth().getRedirectResult()
+        if (result.credential) window.localStorage.setItem('ghAuth', JSON.stringify(result))
+      }
+      try {
+        let ghAuth = JSON.parse(window.localStorage.getItem('ghAuth'))
+        if (ghAuth) {
+          let currentTime = new Date().getTime()
+          let expirationTime = ghAuth.user.stsTokenManager.expirationTime
+          let expiresInSecs = (expirationTime-currentTime)/1000
+          if (expiresInSecs >= 300) {
+            authenticatedUser = ghAuth.user
+            authenticatedUser.acct = ghAuth.additionalUserInfo.username
+            authenticatedUser.isAdmin = siteConfig.siteAdmins && siteConfig.siteAdmins.indexOf(authenticatedUser.acct) >= 0
+            oauthAccessToken = ghAuth.credential.oauthAccessToken
+          }
         }
-
-        try {
-
-            let ghAuth = JSON.parse(window.localStorage.getItem('ghAuth'));
-
-            if ( ghAuth ) {
-
-                let currentTime = new Date().getTime();
-                let expirationTime = ghAuth.user.stsTokenManager.expirationTime;
-                let expiresInSecs = (expirationTime - currentTime) / 1000;
-          
-                if ( expiresInSecs >= 300 ) {
-            
-                    authenticatedUser = ghAuth.user;
-                    authenticatedUser.acct = ghAuth.additionalUserInfo.username;
-                    authenticatedUser.isAdmin = siteConfig.siteAdmins && siteConfig.siteAdmins.indexOf(authenticatedUser.acct) >= 0;
-                    oauthAccessToken = ghAuth.credential.oauthAccessToken;
-                }
-            }
-        } catch( err ) {
-            
-            console.log(err);
-        }
+      } catch(err){console.log(err)}
     }
 
     getContentSource()
-        .then(sourceInfo => {
-            
-            contentSource = sourceInfo
-            return getSiteConfig();
+    .then(sourceInfo => {
+      contentSource = sourceInfo
+      return getSiteConfig()
+    })
+    .then(config => {
+      siteConfig = config
+      if (ENV === 'PROD') {
+        contentSource = {...contentSource, ...{
+            acct: config.acct || contentSource.acct, 
+            repo: config.repo || contentSource.repo, 
+            ref: qargs.ref || config.ref || contentSource.ref || 'main'
+        }}
+      }
+      if (gaPropertyID) ga('create', gaPropertyID, 'auto')
+      if (siteConfig.description) setMetaDescription(siteConfig.description)
+      let attrsWithUrls = ['banner', 'favicon', 'logo']
+      if (ENV === 'DEV' && (contentSource.acct === 'jstor-labs' && contentSource.repo === 'juncture-digital') ) {
+        attrsWithUrls.forEach(attr => { if (config[attr]) config[attr] = convertURL(config[attr]) })
+      } else if (contentSource.repo) {
+        headRef(contentSource.acct, contentSource.repo, contentSource.ref).then(headHash => {
+          if (headHash) {
+            contentSource.hash = headHash.slice(0,7)
+            contentSource.assetsBaseUrl = `https://raw.githubusercontent.com/${contentSource.acct}/${contentSource.repo}/${contentSource.hash}`
+            attrsWithUrls.forEach(attr => { if (config[attr]) config[attr] = convertURL(config[attr]) })
+          }
         })
-        .then(config => {
-            
-            siteConfig = config;
-            
-            if ( ENV === 'PROD' ) {
-        
-                contentSource = {
-                    ...contentSource,
-                    ...{
-                        acct: config.acct || contentSource.acct, 
-                        repo: config.repo || contentSource.repo, 
-                        ref: qargs.ref || config.ref || contentSource.ref || 'main'
-                    }
-                };
-            }
-
-            if ( gaPropertyID ) {
-                ga('create', gaPropertyID, 'auto');
-            }
-            if ( siteConfig.description ) {
-                setMetaDescription(siteConfig.description);
-            }
-            let attrsWithUrls = ['banner', 'favicon', 'logo'];
-
-            if ( ENV === 'DEV' && (contentSource.acct === 'jstor-labs' && contentSource.repo === 'juncture-digital') ) {
-
-                attrsWithUrls.forEach(attr => {
-                    if ( config[attr] ) {
-                        
-                        config[attr] = convertURL(config[attr]);
-                    }
-                });
-            } else if ( contentSource.repo ) {
-        
-                console.log(`else if contentSource.repo - contentSource: ${JSON.stringify(contentSource)}`);
-        
-                headRef(contentSource.acct, contentSource.repo, contentSource.ref).then(headHash => {
-          
-                    if ( headHash ) {
-            
-                        contentSource.hash = headHash.slice(0,7);
-                        contentSource.assetsBaseUrl = `https://raw.githubusercontent.com/${contentSource.acct}/${contentSource.repo}/${contentSource.hash}`;
-                        attrsWithUrls.forEach(attr => {
-                            if ( config[attr] ) {
-                                config[attr] = convertURL(config[attr])
-                            }
-                        );
-                    }
-                });
-            }
-
-            return config;
-        })
-        .then(config => gcOauth())
+      }
+      return config
+    })
+    .then(config => gcOauth())
     .then(resp => headRef('jstor-labs', 'juncture', junctureVersion, ghUnscopedToken))
     .then(hash => {
       junctureVersionHash = hash ? hash.slice(0,7) : null
@@ -771,7 +688,6 @@
               this.contentSource.repo = targetRepo.name
               this.contentSource.ref = targetRepo.default_branch
               this.contentSource.basePath = `/${this.authenticatedUser.acct}/${targetRepo.name}`
-              console.log(`doPageAdd - this.ContentSource: ${JSON.stringify(this.ContentSource)}`);
               let refHash = await headRef(this.contentSource.acct, this.contentSource.repo, this.contentSource.ref)
               contentSource.assetsBaseUrl = `https://raw.githubusercontent.com/${this.contentSource.acct}/${this.contentSource.repo}/${refHash}`
               this.formProcessingMessage = `New page added`
@@ -1472,29 +1388,20 @@
 
     // Gets site config
     async function getSiteConfig() {
-      
       let config = {}
-      
       let configUrl = ENV === 'DEV'
         ?  contentSource.repo 
           ? `${contentSource.assetsBaseUrl}/config.yaml`
           : `${window.location.origin}/config.yaml`
         : window.location.host.indexOf('juncture-digital.org') >= 0
           ? `https://juncture-digital.org/config.yaml`
-          : `${window.location.origin}${contentSource.basePath}/config.yaml`;
-
-      console.log(`Config URL: ${configUrl}`);
-
+          : `${window.location.origin}${contentSource.basePath}/config.yaml`
       let resp = await fetch(configUrl)
       if (resp.ok) config = YAML.parse(await resp.text())
 
-      console.log(`config: ${JSON.stringify(config)}`);
-
       ghUnscopedToken = config.ghUnscopedToken 
         ? atob(config.ghUnscopedToken)
-        : atob('Z2l0aHViX3BhdF8xMUFQTFIzMkEweU80SlR0UVhDQ3pJX2E2TG1SR1FxS3dXN25PZDcyOVlVZkFGa09YZXpJb0dXNURPcFBXNEZtYnJRTkJWRzVYTjIwallMTnhp')
-
-      console.log(`ghUnscopedToken: ${ghUnscopedToken}`);        
+        : atob('Z2hwX05lcnV2RUYzRmx6M3o5YnFjQWZuOGpJQnJMR3lEMTNmYjYyVw==')
 
       let ghToken = oauthAccessToken || ghUnscopedToken
       if (ENV === 'PROD' && window.location.host.indexOf('juncture-digital.org') >= 0) {
@@ -1510,12 +1417,6 @@
       if (config.gaPropertyID) gaPropertyID = config.gaPropertyID
       if (config.fontawesome) fontawesome = config.fontawesome
       oauthCredsFound = gcApiKey !== undefined && gcAuthDomain !== undefined
-
-      console.log(`gcApiKey: ${gcApiKey}`);
-      console.log(`gcAuthDomain: ${gcAuthDomain}`);
-      console.log(`gaPropertyID: ${gaPropertyID}`);
-      console.log(`oauthCredsFound: ${oauthCredsFound}`);
-
       return config
     }
 
