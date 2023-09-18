@@ -59,7 +59,7 @@ const defaults = {
         maxZoom: 16,
     // Leaflet.TimeDimension options: see https://github.com/socib/Leaflet.TimeDimension
         timeDimension: false,
-        autoPlay: false,
+        autoPlay: true,
         loop: false,
         fps: 1,
         timeInterval: '/P1Y', // see https://en.wikipedia.org/wiki/ISO_8601#Time_intervals
@@ -227,9 +227,17 @@ module.exports = {
         },
         addTimeDimension() {
             // console.log(`timeDimension: timeInterval=${this.timeInterval} period=${this.period} loop=${this.loop} autoPlay=${this.autoPlay} transitionTime=${1000/this.fps}`)
+            let mapTimeInterval = this.timeInterval
+            if (this.timeInterval !== '/P1Y'){
+                const startTime = new Date(this.timeInterval.split('/')[0], 0)
+                const endTime = new Date(this.timeInterval.split('/')[1], 1)
+                //console.log('start and end string', startTime.toString(), endTime.toString());
+                mapTimeInterval = startTime.toISOString() + '/' + endTime.toISOString();
+            }
+            
             let timeDimension = new L.TimeDimension({
                 // times: [],
-                timeInterval: this.timeInterval,
+                timeInterval: mapTimeInterval,
                 timeDimensionControl: true,
                 period: this.period,
                 // validTimeRange: undefined,
@@ -286,8 +294,8 @@ module.exports = {
         syncTileLayers() {
             const mapDefs = {}
             this.layers
-                .filter(layerDef => layerDef.mapwarper || layerDef.heatmap)
-                .forEach(layerDef => mapDefs[layerDef['mapwarper-id'] || 'heatmap'] = layerDef)
+                .filter(layerDef => layerDef.mapwarper || layerDef.allmaps || layerDef.heatmap)
+                .forEach(layerDef => mapDefs[layerDef['mapwarper-id'] || layerDef['allmaps-id'] || 'heatmap'] = layerDef)
             
             const next = []
             if (this.tileLayers.length > 0 && this.tileLayers[0].id === this.basemap) {
@@ -313,6 +321,13 @@ module.exports = {
                 if (!exists) {
                     if (layerId === 'heatmap') {
                         this.addHeatmap(layerDef)
+                    } else if (layerId === 'allmaps') {
+                        const layer = L.tileLayer(`https://allmaps.xyz/maps/${layerDef['allmaps-id']}/{z}/{x}/{y}.png`, { maxZoom: 19, attribution: 'Allmaps' })
+                        next.push({id: layerId, label: layerDef.label || layerDef.title, layer})
+                        layer.options.id = layerDef.id
+                        layer.options.label = layerDef.label || layerDef.title
+                        layer.options.type = 'allmaps'
+                        if (layerDef.active) layer.addTo(this.map)
                     } else {
                         const layer = L.tileLayer(`https://mapwarper.net/maps/tile/${layerDef['mapwarper-id']}/{z}/{x}/{y}.png`)
                         next.push({id: layerId, label: layerDef.label || layerDef.title, layer})
