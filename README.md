@@ -41,7 +41,7 @@ url="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/AtelierTypographi
 
 ## Our Team
 
-Print & Probability is a collaboration among researchers from Carnegie Mellon University and the University of California, San Diego.  The team's led by [Taylor Berg-Kirkpatrick](https://cseweb.ucsd.edu/~tberg/) (UCSD Computer Science), [Max G'Sell](http://www.stat.cmu.edu/people/faculty/mgsell) (CMU Statistics and Machine Learning), and [Christopher Warren](https://www.cmu.edu/dietrich/history/people/courtesy/warren.html) (CMU English and History) and also includes [Matthew Lincoln](https://matthewlincoln.net/) (JSTOR Labs), [Kartik Goyal](https://www.ttic.edu/faculty/goyal/) (TTIC), [Nikolai Vogler](https://nvog.github.io/) (UCSD CS PhD Student), [Sam Lemley](https://www.library.cmu.edu/about/people/samuel-lemley) (CMU Libraries), Elizaveta Pertseva (UCSD undergrad), [Kari Thomas](https://www.cmu.edu/dietrich/history/people/graduate-students/thomas.html) (CMU History PhD Student), [D.J. Schuldt](https://www.linkedin.com/in/dj-schuldt-05045171) (Simmmons MLIS student), [Elizabeth Dietrich](https://www.cmu.edu/dietrich/english/about-us/phds/bios/elizabeth-dieterich.html) (CMU English PhD Student), [Laura DeLuca](https://www.cmu.edu/dietrich/english/about-us/phds/bios/laura-deluca.html) (CMU English PhD Student) and [Sriram Viswanathan](https://github.com/FrailWords) (CMU Computer Science).
+Print & Probability is a collaboration among researchers from Carnegie Mellon University and the University of California, San Diego.  The team's led by [Taylor Berg-Kirkpatrick](https://cseweb.ucsd.edu/~tberg/) (UCSD Computer Science), [Max G'Sell](http://www.stat.cmu.edu/people/faculty/mgsell) (CMU Statistics and Machine Learning), and [Christopher Warren](https://www.cmu.edu/dietrich/history/people/courtesy/warren.html) (CMU English and History) and also includes [Matthew Lincoln](https://matthewlincoln.net/) (JSTOR Labs), [Kartik Goyal](https://www.ttic.edu/faculty/goyal/) (TTIC), [Nikolai Vogler](https://nvog.github.io/) (UCSD CS PhD Student), [Sam Lemley](https://www.library.cmu.edu/about/people/samuel-lemley) (CMU Libraries), Elizaveta Pertseva (UCSD undergrad), [Kari Thomas](https://www.cmu.edu/dietrich/history/people/graduate-students/thomas.html) (CMU History PhD Student), [D.J. Schuldt](https://www.linkedin.com/in/dj-schuldt-05045171) (Simmmons MLIS student), [Elizabeth Dietrich](https://www.cmu.edu/dietrich/english/about-us/phds/bios/elizabeth-dieterich.html) (CMU English PhD Student), [Laura DeLuca](https://www.cmu.edu/dietrich/english/about-us/phds/bios/laura-deluca.html) (CMU English PhD Student) and [Jonathan Armoza](https://jonathanarmoza.com/).
 <param ve-image region="-187,-484,6345,4949" url="https://github.com/chrisvvarren/Print-Probability/blob/main/images/DC-220329A-NEH-Grant169.jpg?raw=true">  
 
 <!-- label="Team members Shruti Rijhwani, Pierce Williams, Max G'Sell and Christopher Warren on a research expedition to the Pittsburgh Theological Seminary" -->
@@ -56,7 +56,7 @@ The [Print & Probability Workbench](https://github.com/cmu-lib/printprob-db) we 
 
 ## Publications
 
-Warren, Christopher N, Samuel V Lemley, D J Schuldt, Elizabeth Dieterich, Laura S DeLuca, Max G’Sell, Taylor Berg-Kirkpatrick, Kari Thomas, Kartik Goyal, and Nikolai Vogler. “Who Rpinted Shakespeare’s Fourth Folio?” Shakespeare Quarterly 74, no. 2 (June 9, 2023): 139–46. [https://doi.org/10.1093/sq/quad021](https://doi.org/10.1093/sq/quad021).
+Warren, Christopher N, Samuel V Lemley, D J Schuldt, Elizabeth Dieterich, Laura S DeLuca, Max G’Sell, Taylor Berg-Kirkpatrick, Kari Thomas, Kartik Goyal, and Nikolai Vogler. “Who Rpinted Shakespeare’s Fourth Folio?” Shakespeare Quarterly 74, no. 2 (June 9, 2023): 139–46. [https://doi.org/10.1093/sq/quad021](https://hcommons.org/deposits/view/hc:57952/CONTENT/quad021-1.pdf).
 <param ve-iframe src="https://hcommons.org/deposits/view/hc:57952/CONTENT/quad021-1.pdf/">
 
 Vogler, Nikolai, Kartik Goyal, Kishore PV Reddy, Elizaveta Pertzeva, Samuel V. Lemley, Christopher N. Warren, Max G’Sell, and Taylor Berg-Kirkpatrick. “Contrastive Attention Networks for Attribution of Early Modern Print.” In Association for the Advancement of Artificial Intelligence (AAAI), 2023. [https://arxiv.org/abs/2306.07998](https://arxiv.org/abs/2306.07998)
@@ -108,7 +108,7 @@ RBS’s Andrew W. Mellon Society of Fellows in Critical Bibliography Awards Seco
 
 ## Project Alumni
 
-[Shruti Rijhwani](https://shrutirij.github.io/), [Dan Evans](http://danieljevans.net/), [Avery Wiscomb](https://averywiscomb.net/), [Pierce Williams](http://piercew.net/), [Craig Stamm](https://www.cmu.edu/dietrich/english/about-us/phds/bios/craig-stamm.html)
+[Shruti Rijhwani](https://shrutirij.github.io/), [Dan Evans](http://danieljevans.net/), [Avery Wiscomb](https://averywiscomb.net/), [Pierce Williams](http://piercew.net/), [Craig Stamm](https://www.glenville.edu/directory/craig-stamm), [Sriram Viswanathan](https://github.com/FrailWords)
 <param ve-image region="523,187,1653,1381" url="https://github.com/chrisvvarren/Print-Probability/blob/main/images/191115D_Pittsburgh_Theological_Research_RD-6.jpg?raw=true">
 
 ## Project Support
